@@ -1,0 +1,8 @@
+Package: summarizedat
+Title: Create a Summary of a Dataset
+Version: 0.0.0.9000
+Authors@R: person("Roel", "Hogervorst", email = "hogervorst.rm@gmail.com", role = c("aut", "cre"))
+Description: What the package does (one paragraph).
+Depends: R (>= 3.2.3)
+License: MIT
+LazyData: true
