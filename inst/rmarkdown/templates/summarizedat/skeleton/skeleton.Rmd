@@ -1,0 +1,66 @@
+---
+title: "my title"
+author: "your name"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  html_document:
+    toc: false
+    toc_depth: 2
+    keep_md: false
+    fig_height: 7
+    fig_width: 9
+    fig_caption: true
+---
+
+```{r knitr_setup, include=FALSE, cache=FALSE}
+
+library(rmarkdown)
+library(knitr)
+
+### Chunk options ###
+
+# Modify at your will #
+
+## Text results
+opts_chunk$set(echo = TRUE, warning=TRUE, message=TRUE)
+
+## Code decoration
+opts_chunk$set(tidy=TRUE, comment = NA, highlight = TRUE)
+
+## Cache
+opts_chunk$set(cache = 2, cache.path = "output/cache/")
+opts_chunk$set(cache.extra = rand_seed)
+
+## Plots
+opts_chunk$set(fig.path = "output/figures/")
+opts_chunk$set(dpi = 300, fig.align = "default")   # may want 'center' sometimes
+
+# Figure format
+opts_chunk$set(dev='png')  # e.g. choose among 'pdf', 'png', 'svg'...
+# may include specific dev.args as a list... see knitr help
+```
+
+Settings of this pc and the dataset
+```{r datasettings}
+library(summarizedat)
+dat<- yourdataset
+
+
+```
+
+
+# Describe the title
+
+
+## general information about the dataset
+
+
+## specific information about the dataset
+The dataset contains `dim(dat)[1]` rows and `dim(dat)[2]` variables.
+
+```{r}
+        size<-object.size(dat)
+        rownames<-row.names(dat)
+        varnames<-names(dat)
+        if(is.grouped_df(dat)==TRUE){grouplabels<-attr(dat, "labels")}
+```
