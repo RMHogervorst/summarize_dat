@@ -4,6 +4,6 @@
 #' file. This package will act as a nicely formated str() and summary()
 #' but will also perform as a codebook.
 #'
-#'  @docType package
-#'  @name summarizedat
+#' @docType package
+#' @name summarizedat
 NULL

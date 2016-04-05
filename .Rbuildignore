@@ -1,2 +1,5 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
+^R/datasetcreation\.R$
+^README\.Rmd$
+^README-.*\.png$

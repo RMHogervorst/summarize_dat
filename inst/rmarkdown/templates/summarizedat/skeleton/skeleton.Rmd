@@ -44,10 +44,17 @@ Settings of this pc and the dataset
 ```{r datasettings}
 library(summarizedat)
 dat<- yourdataset
+codebook(dat[,1:4])
 
 
 ```
 
+# Metadata of dataset
+
+```{import metadata, child = 'METADATA'}
+
+
+```
 
 # Describe the title
 
@@ -64,3 +71,6 @@ The dataset contains `dim(dat)[1]` rows and `dim(dat)[2]` variables.
         varnames<-names(dat)
         if(is.grouped_df(dat)==TRUE){grouplabels<-attr(dat, "labels")}
 ```
+
+
+
