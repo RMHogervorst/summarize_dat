@@ -43,7 +43,7 @@ opts_chunk$set(dev='png')  # e.g. choose among 'pdf', 'png', 'svg'...
 Settings of this pc and the dataset
 ```{r datasettings}
 library(summarizedat)
-dat<- yourdataset
+dat<- iris
 codebook(dat[,1:4])
 
 
@@ -51,7 +51,8 @@ codebook(dat[,1:4])
 
 # Metadata of dataset
 
-```{import metadata, child = 'METADATA'}
+```{import metadata}
+#, child = 'METADATA'}
 
 
 ```
@@ -72,5 +73,17 @@ The dataset contains `dim(dat)[1]` rows and `dim(dat)[2]` variables.
         if(is.grouped_df(dat)==TRUE){grouplabels<-attr(dat, "labels")}
 ```
 
-
+#
+```{r, results="asis"}
+for( i in seq_len(ncol(dat)) ) {
+  cat("### ", names(dat)[i], "\n\n")
+  if(class(dat[[i]]) == 'numeric') {
+    cat(mean(dat[[i]]),'\n')
+  } else if(class(dat[[i]])=='factor') {
+    print(table(dat[[i]]))
+  } else {
+    cat('Something Else\n\n')
+  }
+}
+```
 

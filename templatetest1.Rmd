@@ -1,0 +1,27 @@
+---
+title: ""
+date: 2016-04-12
+output:
+  rmdformats::html_clean:
+    highlight: kate
+---
+
+
+
+
+###  Sepal.Length 
+
+5.843333 
+###  Sepal.Width 
+
+3.057333 
+###  Petal.Length 
+
+3.758 
+###  Petal.Width 
+
+1.199333 
+###  Species 
+
+    setosa versicolor  virginica 
+        50         50         50 
