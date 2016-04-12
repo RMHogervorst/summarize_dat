@@ -1,12 +1,32 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-summarize\_dat
-==============
+introduction to the summarize\_dat package
+==========================================
+
+You have been there, at the end of a research project everything is done, you have painstakingly collected all your measurements, your analyses are done, your paper is under review, you're finished. But there is this small thing about your data.
+
+Documenting your dataset is a boring and tedious task and there is often no incentive to do it correctly. If you want to do the right thing and make your dataset available to the world, you will have to document your data or no one will know what it is or how to use it. However you will often have to enter the same information in multiple places.
+
+This package aims to take away some of your burdens, but leaves you in control.
+
+This package takes your cleaned and ready dataset and helps you in documenting the data. So that it is ready to be hosted on your institutes repository or in larger world wide databases.
+
+The main function `describe_data(df)` takes your dataset and some metadata that you entered and returns a nicely formated rmarkdown document with general information and a descriptive codebook that you can edit. You will be able to add background information about the variables, your collection methods and other information that you deem necessary. When you are satisfied with the rmarkdown document click `knit` and turn your document into a pdf, html or other format.
+
+The package can also write to standard meta data file types such as Tabular Data Package Specifications or Data Documentation Inititiave or Dublin Common Core.
+
+Current state of project
+========================
+
+This project is now in early stages. I very welcome feedback (open an issue or contact me directly) or cooperation.
+
+[![Project Status: Concept - Minimal or no implementation has been done yet.](http://www.repostatus.org/badges/latest/concept.svg)](http://www.repostatus.org/#concept)
+
+some title
+----------
 
 Display a summary of a data.frame or tbl\_df with a few commands
 
 It should display the information of str() and summary() but more.
-
-Endresult in a html file for example
 
 Also display a bar if it takes longer than a few second.
 
