@@ -1,4 +1,11 @@
-# summarize_dat
+---
+title: "Summarize_dat"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
 Display a summary of a data.frame or tbl_df with a few commands
 
 It should display the information of str() and summary() but more.
