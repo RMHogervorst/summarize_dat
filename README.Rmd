@@ -8,7 +8,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 Display a summary of a data.frame or tbl_df with a few commands
 
-It should display the information of str() and summary() but more.
+It should display the information of str() and  summary() but more.
 
 Endresult in a html file for example
 
