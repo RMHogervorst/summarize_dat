@@ -13,6 +13,13 @@ knitr::opts_chunk$set(
   fig.path = "README-"
 )
 ```
+## Current state of project
+This project is now in early (alpha) stages. I very welcome feedback (open an issue or contact
+me directly) or cooperation. 
+
+[![Project Status: Concept - Minimal or no implementation has been done yet.](http://www.repostatus.org/badges/latest/concept.svg)](http://www.repostatus.org/#concept)
+
+
 
 # introduction to the summarize_dat package
 
@@ -43,12 +50,6 @@ or other format.
 The package can also write to standard meta data file types such as Tabular
 Data Package Specifications or Data Documentation Inititiave or Dublin Common
 Core. 
-
-# Current state of project
-This project is now in early stages. I very welcome feedback (open an issue or contact
-me directly) or cooperation. 
-
-[![Project Status: Concept - Minimal or no implementation has been done yet.](http://www.repostatus.org/badges/latest/concept.svg)](http://www.repostatus.org/#concept)
 
 
 ## some title

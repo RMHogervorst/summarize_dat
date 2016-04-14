@@ -1,4 +1,11 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+Current state of project
+------------------------
+
+This project is now in early (alpha) stages. I very welcome feedback (open an issue or contact me directly) or cooperation.
+
+[![Project Status: Concept - Minimal or no implementation has been done yet.](http://www.repostatus.org/badges/latest/concept.svg)](http://www.repostatus.org/#concept)
+
 introduction to the summarize\_dat package
 ==========================================
 
@@ -13,13 +20,6 @@ This package takes your cleaned and ready dataset and helps you in documenting t
 The main function `describe_data(df)` takes your dataset and some metadata that you entered and returns a nicely formated rmarkdown document with general information and a descriptive codebook that you can edit. You will be able to add background information about the variables, your collection methods and other information that you deem necessary. When you are satisfied with the rmarkdown document click `knit` and turn your document into a pdf, html or other format.
 
 The package can also write to standard meta data file types such as Tabular Data Package Specifications or Data Documentation Inititiave or Dublin Common Core.
-
-Current state of project
-========================
-
-This project is now in early stages. I very welcome feedback (open an issue or contact me directly) or cooperation.
-
-[![Project Status: Concept - Minimal or no implementation has been done yet.](http://www.repostatus.org/badges/latest/concept.svg)](http://www.repostatus.org/#concept)
 
 some title
 ----------
