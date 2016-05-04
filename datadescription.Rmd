@@ -1,0 +1,39 @@
+---
+title: ""
+date: "2016-04-14"
+output:
+  rmdformats::html_clean:
+    highlight: kate
+---
+
+
+
+
+# General description of the dataset
+This file was created with 
+
+
+###  Geslacht 
+
+
+ Mannen Vrouwen 
+     35      35 
+###  Perioden 
+
+Something Else
+
+###  Ondergewicht 
+
+0.02107143 
+###  Normaalgewicht 
+
+0.5667857 
+###  Overgewicht 
+
+0.4122286 
+###  cm 
+
+1733.3 
+###  kg 
+
+743.2714 

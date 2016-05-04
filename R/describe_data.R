@@ -1,7 +1,7 @@
 #' Describe your dataset
 #'
-#' AFter your data is in memory, use this tool to create a
-#' description file. AFter creation the file is easy to edit for you.
+#' After your data is in memory, use this tool to create a
+#' description file. After creation the file is easy to edit for you.
 #' @param df your data frame
 #' @export
 describe_data <- function(df) {
