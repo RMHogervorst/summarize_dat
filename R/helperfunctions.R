@@ -19,11 +19,17 @@ general_info <- function(df){
 }
 #
 # general description of all numeric variables
+# All the variables are already in the density function.
 numeric_function <- function(var){
         numeric_things <- list(
                 # display densityline with minimum, maximum and median values (like sparkline).
                 density = density(var),
                 # also display mean and sd values
+                mean = mean(var, na.rm = TRUE), ##
+                median = median(var, na.rm = TRUE),
+                min = min(var, na.rm = FALSE),
+                max = max(var, na.rm = FALSE),
+                sd = sd(var, na.rm = TRUE),
                 normality = shapiro.test(var)
                 # perhaps normality check?
         )
