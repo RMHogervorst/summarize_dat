@@ -5,7 +5,10 @@ output:
   rmdformats::html_clean:
     highlight: kate
 ---
-
+<!-- This file was created with the summarizedat package.
+You can edit the texts after creation.
+This comment will not be printed in the final product if you
+knit this document. -->
 
 ```{r knitr_init, echo=FALSE, cache=FALSE}
 library(knitr)
@@ -26,7 +29,7 @@ dataset <- data
 ```
 
 # General description of the dataset
-This file was created with 
+
 
 
 ```{r, results="asis"}
