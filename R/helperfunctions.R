@@ -27,8 +27,8 @@ numeric_function <- function(var){
                 # also display mean and sd values
                 mean = mean(var, na.rm = TRUE), ##
                 median = median(var, na.rm = TRUE),
-                min = min(var, na.rm = FALSE),
-                max = max(var, na.rm = FALSE),
+                min = min(var, na.rm = TRUE),
+                max = max(var, na.rm = TRUE),
                 sd = sd(var, na.rm = TRUE),
                 normality = shapiro.test(var)
                 # perhaps normality check?
