@@ -11,7 +11,7 @@
 #'
 #' @param pac_name the name of the package
 #'
-#' @return
+#' @return TRUE or false
 #'
 #' @examples
 #' is_package_loaded("methods")
