@@ -8,8 +8,7 @@
 #'
 #' @param numeric_var name of the variable to plot (will print pretty)
 #'
-#' @return
-#'
+#' @return plots a density graph with
 #'
 #' @examples
 #' normal_plot_numeric(iris$Sepal.Width)
@@ -19,7 +18,7 @@ normal_plot_numeric <- function(numeric_var){
         # substitute if at least one character followed by dollarsign
         # with nothing. (leaving only varname)
         name <- ifelse(grepl("\\$", name),
-                       gsub("[A-z]{1,}\\$", "", name),
+                       gsub("^[[:graph:]]{1,}\\$", "", name),
                        name)
         testresult <- numeric_function(numeric_var)
         plot(testresult$density, main = paste0("Density of variable: ", name))
