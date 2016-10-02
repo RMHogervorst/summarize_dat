@@ -39,10 +39,25 @@ numeric_function <- function(var){
 # general description of all factor variables
 #
 factor_function <- function(var) {
-        # if less then 10 the distribution per category
+        # if less or equal to 10 the numbers per category
+        if(nlevels(var) <11){
+                plot(var)
+        }else{
+                # make table
+                tabl <- table(var)
+                # order on length
+                tabl <- sort(tabl,decreasing = TRUE)
+                # return largests 8 indexes
+                subtabl <- tabl[1:8]
+                # plot largest 8
+                plot(subtabl)
+                # give text summary of all.
+                print(tabl)
+        }
         # bar chart probably
         # if more than 10 the biggest 5-7 categories
         # if 2 options display special?
+
 }
 #
 #
