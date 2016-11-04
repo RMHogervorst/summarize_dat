@@ -1,39 +1,40 @@
 ---
 title: ""
-date: "2016-04-14"
+date: "2016-10-02"
 output:
   rmdformats::html_clean:
     highlight: kate
 ---
-
+<!-- This file was created with the summarizedat package.
+You can edit the texts after creation.
+This comment will not be printed in the final product if you
+knit this document. -->
 
 
 
 # General description of the dataset
-This file was created with 
+
+This dataset of  rows and 
+ columns. Is 7088 large. 
+The names of the variables in this dataset are:
+Sepal.Length, Sepal.Width, Petal.Length, Petal.Width, Species the number of unique cases per
+variable are: 
+
+35, 23, 43, 22, 3.
 
 
-###  Geslacht 
+### Grouping in the dataset
+If there are groups in the dataset there are .
+The largest group is  and all the
+groups are 
 
 
- Mannen Vrouwen 
-     35      35 
-###  Perioden 
 
-Something Else
 
-###  Ondergewicht 
+# Details
 
-0.02107143 
-###  Normaalgewicht 
 
-0.5667857 
-###  Overgewicht 
 
-0.4122286 
-###  cm 
-
-1733.3 
-###  kg 
-
-743.2714 
+```
+Error in seq_len(ncol(dataset)): argument must be coercible to non-negative integer
+```

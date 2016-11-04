@@ -4,7 +4,7 @@
 # general description of dataset
 general_info <- function(df){
         general<- list(
-                "size" = object.size(df),
+                "size" = format(object.size(df), units = "auto" ),
                 "dimensions" = dim(df),
                 "class" = attr(df, "class"),
                 # if groups
@@ -40,14 +40,15 @@ numeric_function <- function(var){
 #
 factor_function <- function(var) {
         # if less or equal to 10 the numbers per category
+        # make table
+        tabl <- table(var)
+        # order on length
+        tabl <- sort(tabl,decreasing = TRUE)
+
         if(nlevels(var) <11){
-                plot(var)
+                plot(table)
         }else{
-                # make table
-                tabl <- table(var)
-                # order on length
-                tabl <- sort(tabl,decreasing = TRUE)
-                # return largests 8 indexes
+                                # return largests 8 indexes
                 subtabl <- tabl[1:8]
                 # plot largest 8
                 plot(subtabl)
@@ -75,4 +76,7 @@ character_function <- function(var){
         charact
 }
 
-
+# ordinal
+#
+# haven : labelled
+#
